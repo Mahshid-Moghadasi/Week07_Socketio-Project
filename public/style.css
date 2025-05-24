@@ -16,17 +16,19 @@ main {
   align-items: center;
 }
 
+
 #positionDisplay {
   position: absolute;
   top: 10px;
   left: 0;
   right: 0;
+  padding: 0 16px;
   text-align: center;
-  font-size: 18px;
+  font-size: 16px;
   color: white;
   font-family: monospace;
   z-index: 10;
   pointer-events: none;
-  line-height: 1.4;
-  padding: 0 10px;
+  line-height: 1.5;
+  background: rgba(0, 0, 0, 0.5); /* optional, helps with contrast */
 }

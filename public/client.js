@@ -7,6 +7,8 @@ let poemFragment = [];     // The part of the poem assigned to you
 function setup() {
   createCanvas(windowWidth, windowHeight);
   textAlign(LEFT, TOP);
+  textWrap(WORD); // this wraps text to fit screen width  
+  textAlign(LEFT, TOP);
   fill(255);
   textSize(18);
 }
@@ -16,18 +18,24 @@ function draw() {
   background(0);
 
   if (poemFragment.length > 0) {
-    let x = 30;
-    let y = 30;
+    textAlign(LEFT, TOP);
+    textWrap(WORD);
+    textSize(18);
+    fill(255);
+
+    let x = 20;  // left padding
+    let y = 60;  // leave room for top message
+    let maxWidth = width - 40; // padding on both sides
 
     for (let line of poemFragment) {
-      text(line.trim(), x, y);
-      y += 30;
+      text(line.trim(), x, y, maxWidth); // wrap within screen width
+      y += 50; // space between lines
     }
 
-    textSize(14);
-    //text(`Grid Position: (${poemPosition.x}, ${poemPosition.y})`, x, height - 40);
   } else {
     textAlign(CENTER, CENTER);
+    textSize(16);
+    fill(200);
     text("Waiting for your piece of the poem...", width / 2, height / 2);
   }
 }
