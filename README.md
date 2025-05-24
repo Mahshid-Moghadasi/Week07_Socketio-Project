@@ -20,7 +20,6 @@ Only by coming together in space can the full poem be read and felt.
 
 - Node.js + Express
 - Socket.IO for real-time communication
-- p5.js for creative visuals
 - Plain HTML/CSS/JS frontend
 
 ---
