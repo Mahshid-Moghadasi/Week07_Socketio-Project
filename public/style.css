@@ -1,9 +1,9 @@
-body, html {
+body,html {
   margin: 0;
-  padding: 0;
-  font-family: sans-serif;
-  color: white;
+  padding-top: 70px; /* room for the top text */
+  font-family: monospace;
   background: black;
+  color: white;
 }
 
 h1 {
@@ -18,11 +18,11 @@ main {
 
 
 #positionDisplay {
-  position: absolute;
-  top: 10px;
+  position: fixed;
+  top: 0;
   left: 0;
   right: 0;
-  padding: 0 16px;
+  padding: 10px 16px;
   text-align: center;
   font-size: 16px;
   color: white;
@@ -30,5 +30,10 @@ main {
   z-index: 10;
   pointer-events: none;
   line-height: 1.5;
-  background: rgba(0, 0, 0, 0.5); /* optional, helps with contrast */
+  background: rgba(0, 0, 0, 0.75);
+}
+
+#poemContainer {
+  padding: 0 20px;
+  line-height: 1.8;
 }
