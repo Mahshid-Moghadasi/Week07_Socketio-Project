@@ -13,6 +13,7 @@ Only by coming together in space can the full poem be read and felt.
 - Users are placed in a **dynamic 1-row grid** (e.g. 1×N layout).
 - A **shared view** shows the current arrangement of participants and their fragments.
 - The experience emphasizes **cooperation**, **diversity**, and **togetherness**.
+- The poem is by Sally Author (https://www.sullytheauthor.com/2024/06/28/threads-of-unity-poem/)
 
 ---
 
